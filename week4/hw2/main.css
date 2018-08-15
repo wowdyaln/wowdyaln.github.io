@@ -1,0 +1,87 @@
+
+h1 {
+  margin: 20px;
+}
+
+.title {
+  font-size: 26px;
+  color: grey;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+}
+
+
+p {
+  margin: 10px 20px;
+}
+
+.required {
+  color: red;
+}
+
+.form {
+  margin: 0px;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* form input */
+input[type="text"] {
+  font-size: 20px;
+}
+
+input[type="email"] {
+  font-size: 20px;
+}
+/*  */
+
+.FormCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 50px;
+  margin-bottom: 48px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  padding-bottom: 6px;
+  word-wrap: break-word;
+}
+
+.styled {
+  border: 0;
+  margin: 20px;
+  margin-top: 0px;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+/* change background-color if required fields filed is empty. */
+.missValue {
+  background-color: pink;
+}
+
+.missValue:after {
+  content: '這是必填問題';
+  color: red;
+}
+/*  */
