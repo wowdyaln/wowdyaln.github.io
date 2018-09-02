@@ -8,7 +8,7 @@ $(document).ready( function(){
       <li class="list-group-item d-flex justify-content-between align-items-center">
             ${content}
             <p class="mr-auto"></p>
-            <button type="button" class="btn__delete btn btn-outline-secondary p-2">DELETE</button>
+            <button type="button" class="btn__delete btn btn-outline-secondary p-2 mr-3">DELETE</button>
             <button type="button" class="btn__finish btn btn-outline-success p-2">Finish</button>
       </li>
       `
