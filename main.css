@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #869940;;
   display: flex;
 }
 
@@ -16,6 +16,7 @@ body {
   width: 640px;
   height: 800px;
   border: lime 2px solid;
+  perspective: 1000px;
 }
 
 .memory__card {
@@ -24,10 +25,12 @@ body {
   margin: 5px;
   position: relative;
   transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
 }
 
 .memory__card:active {
-  transform: scale(.97);
+  transform: scale(0.97);
   transition: transform 0.2s;
 }
 
@@ -35,17 +38,18 @@ body {
   transform: rotateY(180deg);
 }
 
+
+.card__front,   /* 包含逗號，是指 class 中有 card__front 或 card__back，都會被編輯器所選擇到。 */
 .card__back {
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 20px;
   border-radius: 10px;
-  background: #b6c67c
+  background: #b6c67c;
+  backface-visibility: hidden;
 }
 
 .card__front {
-
-
-  /* background: #d794c5; */
+ transform: rotateY(180deg);
 }
