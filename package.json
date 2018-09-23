@@ -1,0 +1,10 @@
+{
+  "name": "memorycardgame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "wowdyaln <rogersmk@gmail.com.tw>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
