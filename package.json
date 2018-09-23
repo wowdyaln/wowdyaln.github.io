@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "wowdyaln <rogersmk@gmail.com.tw>",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.16.3"
   }

@@ -4,11 +4,6 @@ document.addEventListener('click', (e)=> {
 
 
 
-
-
-
-
-
 function flipCard(e){
   console.log("clicked");
   let dom = e.target.parentElement.classList
