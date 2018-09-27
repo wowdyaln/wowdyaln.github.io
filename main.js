@@ -1,6 +1,7 @@
 let firstCard = {
   isFliped: false,
-  logo: ""
+  logo: "",
+  isSun: false
 }
 let secondCard = {
   isFliped: false,
@@ -13,32 +14,26 @@ document.addEventListener('click', (e)=> {
   if (!firstCard.isFliped){
     checkFirstCard(e)
     flipCard(e)
-  }else if (firstCard.isFliped && !secondCard.isFliped){
-    
-    flipCard(e)
-    // secondCard.isFliped = true
-      secondCard.logo = e.target.alt
-    
-    setTimeout( ()=>{
 
+  }else if (firstCard.isFliped && !secondCard.isFliped){
+    flipCard(e)
+    secondCard.logo = e.target.alt
+    setTimeout( ()=>{
       if (secondCard.logo === firstCard.logo) {
         resetCardState()
         return
+
       } else {
         // recover this card and a card which logo is : firstCard.logo
         secondCard.isFliped = false
         secondCard.logo = ""
         flipCard(e)
-
-        // resetCardState()
+        recoverPreviousCard(firstCard.logo)
+        resetCardState()
       }
-
     }, 1000) // hardcode , 怎麽直接取得 CSS .memory__card transition 的秒數？
-    
   }
 })
-
-
 
 function flipCard(e){
   console.log("clicked");
@@ -49,18 +44,38 @@ function flipCard(e){
   }
 }
 
-// first flip ; second flip
-// after flip, check 'alt' property
 function checkFirstCard(e){
   // let dom = e.target.parentElement.classList
     firstCard.isFliped = true
     firstCard.logo = e.target.alt
+  if (e.target.parentElement.classList.contains('sun')){
+    firstCard.isSun = true
+  }
 }
 
 function resetCardState(){
   firstCard.isFliped = false
+  firstCard.isSun = false
   secondCard.isFliped = false
   firstCard.logo = ""
   secondCard.logo = ""
 }
     
+function recoverPreviousCard(logo) {
+  let previousCards = document.querySelectorAll(`img.card__front[alt=${logo}]`)
+  let sunOrMoon
+  if (firstCard.isSun){
+    sunOrMoon = "sun"
+  } else {
+    sunOrMoon = "moon"
+  }
+  let previousCard
+  
+  previousCards.forEach( dom => {
+    if (dom.parentElement.classList.contains(sunOrMoon) ){
+      previousCard = dom.parentElement
+    }
+  })
+  previousCard.classList.toggle('flip')
+  previousCard.classList.toggle('pause')
+}
