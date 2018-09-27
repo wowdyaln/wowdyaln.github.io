@@ -15,7 +15,7 @@ document.addEventListener('click', (e)=> {
     checkFirstCard(e)
     flipCard(e)
 
-  }else if (firstCard.isFliped && !secondCard.isFliped){
+  } else if (firstCard.isFliped && !secondCard.isFliped){
     flipCard(e)
     secondCard.logo = e.target.alt
     setTimeout( ()=>{
@@ -31,10 +31,11 @@ document.addEventListener('click', (e)=> {
         recoverPreviousCard(firstCard.logo)
         resetCardState()
       }
-    }, 1000) // hardcode , 怎麽直接取得 CSS .memory__card transition 的秒數？
+    }, 1000) //delay time of recovering a card, 
   }
 })
 
+// todo: 短時間點擊多張卡片，會有卡片無法翻回來的 bug
 function flipCard(e){
   console.log("clicked");
   let dom = e.target.parentElement.classList
@@ -62,7 +63,7 @@ function resetCardState(){
 }
     
 function recoverPreviousCard(logo) {
-  let previousCards = document.querySelectorAll(`img.card__front[alt=${logo}]`)
+  let previousCards = document.querySelectorAll(`img.card__front[alt="${logo}"]`)
   let sunOrMoon
   if (firstCard.isSun){
     sunOrMoon = "sun"
