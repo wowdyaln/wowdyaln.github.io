@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+  <script src="./main.js"></script>
+
+  <title>推友來玩耍！推特二手市集</title>
+</head>
+<body>
+  <div class="FormCard">
+    <h1>
+    推友來玩耍！推特二手市集
+    </h1>
+    
+    <p>
+       詳情請參考：<a href="https://medium.com/@hulitw/mentor-program-b5f96ae1eed1">https://medium.com/@hulitw/mentor-program-b5f96ae1eed1</a> 
+    </p>
+    <p>
+       記得填完表單之後還要寫信報名才算成功，兩者缺一不可！
+    </p>
+    <p>＂認識新朋友，也為自己不需要的東西找到新主人！＂ 《推友來玩耍！推特二手市集》是一個「推聚」+「二手交換市集」 各式興趣或想法都會在這裡集結 無論你想討論公共議題、交換二手書 還是要出清你莫名其妙的購物欲 都．可．以 ！</p>
+    <p>※ 如遇天候或其他不可抗力之因素，主辦單位擁有活動內容變更或暫停的權力</p>
+    <p>※ 雨天備案準備中，近日將公布！</p>
+
+    <p class="required">*必填</p>
+
+<form>
+
+  <!-- Q1 -->
+  <div class="title required_q">
+    <label for="email" >E-mail： <span class="required">*</span></label>
+    <div class="form"><input id="email" type="email" autocomplete="email" tabindex="0" 
+      placeholder="你的 email" name="emailAddress" required>
+    </div>
+  </div>
+
+    <!-- Q2 -->
+  <div class="title required_q">
+    <label for="nickname">暱稱： <span class="required">*</span></label>
+    <div class="form">
+      <input id="nickname" type="text" tabindex="0" name="nickname" 
+       placeholder="你的暱稱" required>
+    </div>
+  </div>
+
+    <!-- Q3 -->
+  <fieldset class="title required_q">
+    <legend class="title">請選擇您的身分 <span class="required">*</span></legend>
+    <div >
+      <input type="radio" id="playaround" name="purpose" required/>
+      <label for="playaround">▲我來玩的▲</label>
+    </div>
+    <div>
+      <input type="radio" id="sellstuff" name="purpose" />
+      <label for="sellstuff">▲我想擺攤▲</label>
+    </div>
+  </fieldset>
+
+    <!-- Q4 -->
+  <div class="title">
+    <label for="other">其他：</label>
+    <div class="form">
+      <input id="other" type="text" tabindex="0" name="other" >
+    </div>
+  </div>
+  
+    <!-- submit button -->
+    <input id="submitButton" type="submit" class="styled" value="submit">
+  </form>
+
+
+</div>
+
+   
+</div>
+</body>
+</html>
