@@ -29,7 +29,8 @@ body {
   transition: transform .5s;
 }
 
-.memory__card:active {
+/* 似乎沒作用 ？ */
+.memory__card:active {  
   transform: scale(0.97);
   transition: transform 0.2s;
 }
