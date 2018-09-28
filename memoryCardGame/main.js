@@ -84,5 +84,10 @@ function recoverPreviousCard(logo) {
     }
   })
   previousCard.classList.toggle('flip')
+  /* error msg :
+    ? Cannot read property 'classList' of undefined
+    ? at recoverPreviousCard (main.js:86)
+    ? at setTimeout (main.js:38)
+  */
   previousCard.classList.toggle('pause')
 }
