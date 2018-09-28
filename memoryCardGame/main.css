@@ -6,7 +6,7 @@
 
 body {
   background-color: #869940;;
-  /* display: flex; */
+  display: flex;
   /* flex-wrap: nowrap; */
 }
 
@@ -14,16 +14,11 @@ body {
   margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
-  width: 640px;
-  height: 800px;
+  width: 800px;
+  height: 640px;
   /* borders: lime 2px solid; */
   perspective: 1000px;
 }
-
-/* .title {
-  margin: 40px;
-  
-} */
 
 .memory__card {
   width: calc(25% - 10px);
@@ -35,7 +30,7 @@ body {
   transition: transform .5s;
 }
 
-/* 似乎沒作用 ？ */
+/* //! 似乎沒作用 ？ */
 .memory__card:active {  
   transform: scale(0.97);
   transition: transform 0.2s;
