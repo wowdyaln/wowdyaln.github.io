@@ -1,0 +1,85 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+.card {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: skyblue 1px solid; */
+  background: skyblue;
+}
+
+.card__text {
+  font-size: 32px;
+}
+
+.card__favs {
+  position: relative;
+  top: -25px;
+}
+
+.heart {
+  position: absolute;
+  right: 10px;
+  background-color: red;
+  height: 15px;
+  transform: rotate(-45deg);
+  width: 15px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  top: 0.5px;
+  left: 6.5px;
+}
+
+
+.heart:before {
+  top: -7.5px;
+  left: 0;
+}
+
+.favCount {
+  position: absolute;
+  right: 10px;
+  /* font-size: 18px; */
+  bottom: -16px;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 5px;
+  background: rgba(76, 167, 203, 0.788);
+}
+
+author__pic {
+  /* display: flex; */
+  width: 100px;
+  height: 100px;
+}
+
+.author__name {
+  /* display: flex; */
+  color: white;
+}
+
+.author__screenName {
+  /* display: flex; */
+  color: #555d64;
+}
+
+.author__discription {
+  display: flex;
+}
