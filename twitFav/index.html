@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./main.css">
+  <title>Tweet Favs</title>
+
+</head>
+<body>
+  <section class="searchBox">
+    <label for="favNumber" class="numBox">How many tweets do you want to get ?</label>
+    <select id="favNumber" class="numBox">
+      <option value="">--Please choose a number--</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="50">50</option>
+    </select>
+
+    <h1>Input a tweet user's screen name</h1>
+    <form>
+      <input class="searchBox__ele" type="text" name="search" id="search" placeholder="realDonaldTrump">
+      <button class="submit" id="submit" type="submit">what does he/she like ?</button>
+    </form>
+
+
+  </section>
+
+  
+  <!-- main content here -->
+  <div class="container">
+  </div>
+
+  
+  <script type="text/javascript" src="./script/codebird.js"></script>
+  <script type="text/javascript" src="./script/auth.js"></script>
+  
+  <script type="text/javascript" src="./script/listFav.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.searchBox {
+  margin: 30px auto;
+  text-align: center;
+  border: 5px grey solid;
+  max-width: 700px;
+}
+
+.searchBox__ele {
+  font-size: 20px;
+  border-radius: 5px;
+  background: rgb(235, 213, 186)
+}
+
+.submit {
+  color: azure;
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background: cornflowerblue;
+  box-shadow: inset -3px -1px 8px 0px black;
+}
+.submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.numBox {
+  margin: 10px auto;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px black solid;
+}
+
+.card {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: skyblue 1px solid; */
+  background: skyblue;
+}
+
+.card__text {
+  font-size: 32px;
+}
+
+.card__favs {
+  position: relative;
+  top: -25px;
+}
+
+.heart {
+  position: absolute;
+  right: 10px;
+  background-color: pink;
+  height: 15px;
+  transform: rotate(-45deg);
+  width: 15px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  top: 0.5px;
+  left: 6.5px;
+}
+
+
+.heart:before {
+  top: -7.5px;
+  left: 0;
+}
+
+.favCount {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  bottom: -14px;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 5px;
+  background: rgba(76, 167, 203, 0.788);
+}
+
+.author__pic {
+    border-radius: 50%;
+}
+
+.author__name {
+  /* display: flex; */
+  color: white;
+}
+
+.author__screenName {
+  /* display: flex; */
+  color: #555d64;
+}
+
+.author__discription {
+  display: flex;
+}
