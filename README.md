@@ -1,19 +1,21 @@
-[List fav tweets](https://wowdyaln.github.io/twitFav/)
+- [List fav tweets](https://wowdyaln.github.io/twitFav/)
 
-[Memory Card Game](https://wowdyaln.github.io/memoryCardGame/)
+- [Twitch search Game and go to Live stream](https://wowdyaln.github.io/week4_hw3/)
 
-[Page Title](https://wowdyaln.github.io/week2_hw1/)
+- [Memory Card Game](https://wowdyaln.github.io/memoryCardGame/)
 
-[Medium like](https://wowdyaln.github.io/week2_hw2/)
+- [Twitch Live stream](https://wowdyaln.github.io/week4_hw3/)
 
-[Calculator](https://wowdyaln.github.io/week4_hw1/)
+- [concept of grid](https://wowdyaln.github.io/week7_hw1/)
 
-[推友來玩耍！推特二手市集](https://wowdyaln.github.io/week4_hw2/)
+- [simple TO DO LIST](https://wowdyaln.github.io/week7_hw2/)
 
-[Twitch Live stream](https://wowdyaln.github.io/week4_hw3/)
+- [Page Title](https://wowdyaln.github.io/week2_hw1/)
 
-[hide( ) / show( )](https://wowdyaln.github.io/week4_hw4/)
+- [Medium like](https://wowdyaln.github.io/week2_hw2/)
 
-[concept of grid](https://wowdyaln.github.io/week7_hw1/)
+- [Calculator](https://wowdyaln.github.io/week4_hw1/)
 
-[simple TO DO LIST](https://wowdyaln.github.io/week7_hw2/)
+- [推友來玩耍！推特二手市集](https://wowdyaln.github.io/week4_hw2/)
+
+- [hide( ) / show( )](https://wowdyaln.github.io/week4_hw4/)
