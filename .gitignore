@@ -1,6 +1,2 @@
-memoryCardGame/node_modules/
-memoryCardGame/dev/
-memoryCardGame/app.js
-memoryCardGame/package.json
-memoryCardGame/yarn.lock
+dev/
 .vscode/
