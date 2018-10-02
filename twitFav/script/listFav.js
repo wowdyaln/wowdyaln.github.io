@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
   getSomeoneFavs(params)
 
   // 觸發 submit 事件就清除畫面，重發 request
-  document.querySelector('form').addEventListener('submit', (e)=>{
+  document.getElementById('getFavs').addEventListener('submit', (e)=>{
     
     let user = document.querySelector('#search').value
     params.screen_name = user
@@ -87,7 +87,7 @@ function renderTweet(tweet) {
               <span class="favCount">${favorite_count}</span>
             </div>
             <details class="card__author">
-              <summary>作者</summary>
+              <summary>作者(按我)</summary>
               <img class="author__pic" src=${profile_image_url_https}>
               <span class="author__name">${name}</span>
               <span class="author__screenName">@${screen_name}</span>

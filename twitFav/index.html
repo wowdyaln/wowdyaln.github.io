@@ -10,6 +10,18 @@
 </head>
 <body>
   <section class="searchBox">
+    <h1>step1: Search a user.</h1>
+    <form id="serachUser">
+      <input class="searchBox__ele" type="text" name="search" id="queryUser" placeholder="DonaldTrump">
+      <button class="submit" id="submit" type="submit">Search</button>
+    </form>
+
+    <p>find screen name below :</p>
+    <div class="serachUser__result">
+    </div>
+  </section>
+
+  <section class="searchBox">
     <label for="favNumber" class="numBox">How many tweets do you want to get ?</label>
     <select id="favNumber" class="numBox">
       <option value="">--Please choose a number--</option>
@@ -19,8 +31,8 @@
       <option value="50">50</option>
     </select>
 
-    <h1>Input a tweet user's screen name</h1>
-    <form>
+    <h1>step2:  Input a tweet user's screen name</h1>
+    <form id="getFavs">
       <input class="searchBox__ele" type="text" name="search" id="search" placeholder="realDonaldTrump">
       <button class="submit" id="submit" type="submit">what does he/she like ?</button>
     </form>
@@ -38,5 +50,6 @@
   <script type="text/javascript" src="./script/auth.js"></script>
   
   <script type="text/javascript" src="./script/listFav.js"></script>
+  <script type="text/javascript" src="./script/findUser.js"></script>
 </body>
 </html>
