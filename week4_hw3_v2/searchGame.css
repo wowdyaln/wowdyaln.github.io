@@ -1,3 +1,11 @@
+body {
+  background-image: url(https://images.pexels.com/photos/268715/pexels-photo-268715.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
 .searchBox {
   margin: 30px auto;
   text-align: center;
